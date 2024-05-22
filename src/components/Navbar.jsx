@@ -10,9 +10,6 @@ const Navbar = () => {
       <Button as={Link} to="/features" colorScheme="teal">
         Features
       </Button>
-      <Button as={Link} to="/development" colorScheme="teal">
-        Development
-      </Button>
     </HStack>
   );
 };
