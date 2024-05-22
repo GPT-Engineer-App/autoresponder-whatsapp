@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Container, VStack, Text, Input, Button, HStack, IconButton, useToast } from "@chakra-ui/react";
+import Navbar from "../components/Navbar.jsx";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Index = () => {
@@ -33,6 +34,7 @@ const Index = () => {
 
   return (
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+      <Navbar />
       <VStack spacing={4} width="100%">
         <Text fontSize="2xl">WhatsApp Autoresponder</Text>
         <Input placeholder="Type your message here..." value={message} onChange={(e) => setMessage(e.target.value)} size="lg" />
